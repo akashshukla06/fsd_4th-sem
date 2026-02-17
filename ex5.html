@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+   
+
+    <script>
+        var names = ["raj", "mohan", "rahul", "rita"];
+        document.getElementById("demo").innerHTML = names;
+        document.getElementById("demo1").innerHTML =
+            "Total length is " + names.length;
+
+    
+        document.getElementById("demo2").innerHTML =
+            "First name is " + names[0];
+        document.getElementById("demo3").innerHTML =
+            "Joined names: " + names.join(" : ");
+        for (var i = 0; i < names.length; i++) {
+            document.write("Welcome " + names[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

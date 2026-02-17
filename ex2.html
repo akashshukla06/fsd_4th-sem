@@ -6,12 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
     <script>
-        //alert("welcome");
-        // var name=prompt("enter name")
-        // document.write("hello"+name)
-        var ans=confirm("do you like js")
-        document.write("user"+ans)
+        var names= new Set(["ram","syam","ram"]);
+        names.add("ramesh");
+        var txt ="";
+        names.forEach(function (value){
+            txt += value + "<br>";
+        
+        });
+        document.getElementById("demo").innerHTML = txt;
+
 
     </script>
 </body>
