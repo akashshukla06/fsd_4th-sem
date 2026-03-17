@@ -4,6 +4,6 @@ function greet(name, calback){
 }
 function bye(){
     console.log('godbye');
-
+f
 }
 greet('john',bye);
